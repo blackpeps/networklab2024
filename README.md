@@ -7,7 +7,7 @@
 | 01. | Network Config Files and Commands  | 30-01-2024   | [Go](/EXP01/)  | N/A                                                                                                 |
 | 02. | System Calls in OS                 | 30-01-2024   | [Go](/EXP02/)  | N/A                                                                                                 |
 | 03. | TCP (using Socket Programming)     | 06-02-2024   | [Go](/EXP03/)  | [CSL332 - EXP03.pdf](https://github.com/blackpeps/networklab2024/files/14379167/CSL332.-.EXP03.pdf) |
-| 04. | UDP                                | Not Yet Done | [Go](/EXP04/)  | N/A                                                                                                 |
+| 04. | UDP (using Socket Programming)     | 27-02-2024   | [Go](/EXP04/)  | N/A                                                                                                 |
 
 ## Syllabus
 
