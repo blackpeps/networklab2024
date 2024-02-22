@@ -7,7 +7,7 @@
 | 01. | Network Config Files and Commands  | 30-01-2024   | [Go](/EXP01/)  | N/A                                                                                                 |
 | 02. | System Calls in OS                 | 30-01-2024   | [Go](/EXP02/)  | N/A                                                                                                 |
 | 03. | TCP (using Socket Programming)     | 06-02-2024   | [Go](/EXP03/)  | [CSL332 - EXP03.pdf](https://github.com/blackpeps/networklab2024/files/14379167/CSL332.-.EXP03.pdf) |
-| 04. | UDP (using Socket Programming)     | 27-02-2024   | [Go](/EXP04/)  | N/A                                                                                                 |
+| 04. | UDP (using Socket Programming)     | 27-02-2024   | [Go](/EXP04/)  | [CSL332 - EXP04.pdf](https://github.com/blackpeps/networklab2024/files/14379588/CSL332.-.EXP04.pdf) |
 
 ## Syllabus
 
@@ -53,7 +53,7 @@
 
 8. Develop a concurrent file server which will provide the file requested by a client if it exists. If not, the server sends an appropriate message to the client. The server should also send its process ID (PID) to clients for display along with the file or the message.
 
-9. Implement leaky bucket algorithm for congestion control.
+9. Implement a leaky bucket algorithm for congestion control.
 
 10. `Questions`
 - Using Wireshark, Capture packets transferred while browsing a selected website. Investigate the protocols used in each packet, the values of the header fields and the packet size.
