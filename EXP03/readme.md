@@ -115,6 +115,8 @@ These are the essential steps involved in establishing a TCP connection from a c
 
 ## OUTPUT
 
+> After the compilation of server and client C files, the output of the server needs to be executed first, followed by the client.
+
 ### Client
 
 ![client](https://github.com/blackpeps/networklab2024/assets/126700907/c31ead7e-238c-4311-b100-f9d8ced24dcc)
