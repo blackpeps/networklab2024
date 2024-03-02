@@ -8,6 +8,7 @@
 | 02. | System Calls in OS                 | 30-01-2024   | [Go](/EXP02/)  | N/A                                                                                                 |
 | 03. | TCP (using Socket Programming)     | 06-02-2024   | [Go](/EXP03/)  | [CSL332 - EXP03.pdf](https://github.com/blackpeps/networklab2024/files/14379167/CSL332.-.EXP03.pdf) |
 | 04. | UDP (using Socket Programming)     | 26-02-2024   | [Go](/EXP04/)  | [CSL332 - EXP04.pdf](https://github.com/blackpeps/networklab2024/files/14379588/CSL332.-.EXP04.pdf) |
+| 05. | Multi-User Chat using TCP          | 04-03-2024   | [Go](/EXP05/)  | [CSL332 - EXP05.pdf](https://github.com/blackpeps/networklab2024/files/14469951/CSL332.-.EXP05.pdf) |
 
 ## Syllabus
 
