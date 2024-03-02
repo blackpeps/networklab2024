@@ -72,24 +72,6 @@
    
    The first parameter `s` is the socket descriptor of the sending socket. The second parameter `buf` is the array which stores data that is to be sent. The third parameter `len` is the length of that data in bytes. The fourth parameter is the `flag` parameter, which is set to zero. The fifth parameter `to` points to a variable that contains the destination IP address and port. The sixth parameter `tolen` is set to `sizeof(struct sockaddr)`. This function returns the number of bytes actually sent or -1 on error. The header files used are `sys/types.h` and `sys/socket.h`.
 
-## Algorithm
-
-### Client
-
-1. Create socket
-2. Read the matrices from the standard input and send them to the server using the socket
-3. Read the product matrix from the socket and display it on the standard output
-4. Close the socket
-
-### Server
-
-1. Create socket
-2. Bind IP address and port number to the socket
-3. Read the matrices from the client using the socket
-4. Find the product of matrices
-5. Send the product matrix to the client using the socket
-6. Close the socket
-
 ## Output
 
 ### Client
