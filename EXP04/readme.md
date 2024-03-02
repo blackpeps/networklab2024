@@ -2,75 +2,78 @@
 
 ## About the program
 
-### Steps for transfer of data using UDP
+This program demonstrates the use of UDP (User Datagram Protocol) for communication between a client and a server. UDP is a connectionless protocol where data packets are sent without establishing a connection. This makes UDP faster but less reliable compared to TCP.
 
-1. **Creation of UDP socket**
+### Server
 
-   The function call for creating a UDP socket is
-   
+#### Steps for Server Operation:
+
+1. **Creating a socket**
+
    ```c
    int socket(int domain, int type, int protocol);
    ```
-   
-   The domain parameter specifies a communication domain; this selects the protocol family which will be used for communication. These families are defined in `<sys/socket.h>`. In this program, the domain `AF_INET` is used. The next field type has the value `SOCK_DGRAM`. It supports datagrams (connectionless, unreliable messages of a fixed maximum length). The protocol field specifies the protocol used. We always use 0. If the `socket` function call is successful, a socket descriptor is returned. Otherwise -1 is returned. The header files necessary for this function call are `sys/types.h` and `sys/socket.h`.
-   
-2. **Filling the fields of the server address structure**
 
-   The socket address structure is of type `struct sockaddr_in`.
-   
-   ```c
-   struct sockaddr_in {
-       u_short sin_family;
-       u_short sin_port;
-       struct in_addr sin_addr;
-       char sin_zero[8]; /* unused, always zero */
-   };
-   
-   struct in_addr {
-       u_long s_addr;
-   };
-   ```
-   
-   The fields of the socket address structure are:
-   - `sin_family` which in our case is `AF_INET`
-   - `sin_port` which is the port number where socket binds
-   - `sin_addr` is used to store the IP address of the server machine and is of type `struct in_addr`
-   
-   The value for `servaddr.sin_addr` is assigned using the following function:
-   
-   ```c
-   inet_pton(AF_INET, "IP_Address", &servaddr.sin_addr);
-   ```
-   
-   The binary value of the dotted decimal IP address is stored in the field when the function returns.
-   
-   The header file that is to be used is `netinet/in.h`.
-   
-3. **Binding of a port to the socket in the case of server**
-
-   This call is used to specify for a socket the protocol port number where it will wait for messages. A call to `bind` is optional in the case of client and compulsory on the server side.
-   
-   ```c
-   int bind(int sd, struct sockaddr* addr, int addrlen);
-   ```
-   
-   The first field is the socket descriptor. The second is a pointer to the address structure of this socket. The third field is the length in bytes of the size of the structure referenced by `addr`. The header files are `sys/types.h` and `sys/socket.h`. This function call returns an integer, which is 0 for success and -1 for failure.
-   
-4. **Receiving data**
+2. **Binding to a local port**
 
    ```c
-   ssize_t recvfrom(int s, void *buf, size_t len, int flags, struct sockaddr *from, socklen_t *fromlen);
+   int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
    ```
-   
-   The `recvfrom` calls are used to receive messages from a socket, and may be used to receive data on a socket whether or not it is connection oriented. The first parameter `s` is the socket descriptor to read from. The second parameter `buf` is the buffer to read information into. The third parameter `len` is the maximum length of the buffer. The fourth parameter is `flag`, which is set to zero. The fifth parameter `from` is a pointer to `struct sockaddr` variable that will be filled with the IP address and port of the originating machine. The sixth parameter `fromlen` is a pointer to a local `int` variable that should be initialized to `sizeof(struct sockaddr)`. When the function returns, the integer variable that `fromlen` points to will contain the actual number of bytes that is contained in the socket address structure. The header files required are `sys/types.h` and `sys/socket.h`. When the function returns, the number of bytes received is returned or -1 if there is an error.
-   
-5. **Sending data**
+
+3. **Receiving data from clients**
 
    ```c
-   ssize_t sendto(int s, const void *buf, size_t len, int flags, const struct sockaddr *to, socklen_t tolen);
+   ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags,
+                    struct sockaddr *src_addr, socklen_t *addrlen);
    ```
-   
-   The first parameter `s` is the socket descriptor of the sending socket. The second parameter `buf` is the array which stores data that is to be sent. The third parameter `len` is the length of that data in bytes. The fourth parameter is the `flag` parameter, which is set to zero. The fifth parameter `to` points to a variable that contains the destination IP address and port. The sixth parameter `tolen` is set to `sizeof(struct sockaddr)`. This function returns the number of bytes actually sent or -1 on error. The header files used are `sys/types.h` and `sys/socket.h`.
+
+4. **Sending data to clients**
+
+   ```c
+   ssize_t sendto(int sockfd, const void *buf, size_t len, int flags,
+                  const struct sockaddr *dest_addr, socklen_t addrlen);
+   ```
+
+### Client
+
+#### Steps for Client Operation:
+
+1. **Creating a socket**
+
+   ```c
+   int socket(int domain, int type, int protocol);
+   ```
+
+2. **Sending data to the server**
+
+   ```c
+   ssize_t sendto(int sockfd, const void *buf, size_t len, int flags,
+                  const struct sockaddr *dest_addr, socklen_t addrlen);
+   ```
+
+3. **Receiving data from the server**
+
+   ```c
+   ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags,
+                    struct sockaddr *src_addr, socklen_t *addrlen);
+   ```
+
+## Algorithm
+
+### Server
+
+1. Create socket
+2. Bind IP address and port number to the socket
+3. Receive data from clients
+4. Send response to clients
+5. Close the socket
+
+### Client
+
+1. Create socket
+2. Send data to the server
+3. Receive response from the server
+4. Close the socket
 
 ## Output
 
