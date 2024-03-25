@@ -93,3 +93,4 @@ Incoming packet size 8
 Bucket buffer size 3 out of 20
 After outgoing -2 packets left out of 20 in buffer
 ```
+![07 - Leaky Bucket](https://github.com/blackpeps/networklab2024/assets/126700907/1516f447-2543-426f-be69-1bb29c72f916)
