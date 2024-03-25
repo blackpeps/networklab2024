@@ -11,6 +11,8 @@
 | 04. | UDP (using Socket Programming)     | 26-02-2024   | [Go](/EXP04/)  | [CSL332 - EXP04.pdf](https://github.com/blackpeps/networklab2024/files/14379588/CSL332.-.EXP04.pdf) |
 |     | UDP - Matrix Multiplication        | 04-03-2024   | [Go](/EXP04A/) | N/A |
 | 05. | Multi-User Chat using TCP          | 04-03-2024   | [Go](/EXP05/)  | [CSL332 - EXP05.pdf](https://github.com/blackpeps/networklab2024/files/14469951/CSL332.-.EXP05.pdf) |
+| 06. | Stop and Wait                      | 26-03-2024   | [Go](/EXP06/)  | |
+| 07. | Leaky Bucket                       | 26-03-2024   | [Go](/EXP07/)  | |
 
 ## Syllabus
 
