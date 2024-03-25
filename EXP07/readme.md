@@ -69,7 +69,7 @@ Incoming packet size 8
 Bucket buffer size 3 out of 20
 After outgoing -2 packets left out of 20 in buffer
 ```
-```
+
 *Sample Output:*
 
 ```
