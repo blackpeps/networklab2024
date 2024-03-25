@@ -75,3 +75,10 @@ This program implements a simplified version of the Reliable Data Transfer (RDT)
 
 ## Output
 
+### Server
+
+![06 - Stop n Wait - server](https://github.com/blackpeps/networklab2024/assets/126700907/a936b7e3-8ae9-4bee-9a1f-88c8c9a3fbbf)
+
+### Client
+
+![06 - Stop n Wait - client](https://github.com/blackpeps/networklab2024/assets/126700907/e351197f-31a5-41d0-92ea-3e9b3cfd80b2)
