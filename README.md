@@ -13,6 +13,8 @@
 | 05. | Multi-User Chat using TCP          | 04-03-2024   | [Go](/EXP05/)  | [CSL332 - EXP05.pdf](https://github.com/blackpeps/networklab2024/files/14469951/CSL332.-.EXP05.pdf) |
 | 06. | Stop and Wait                      | 26-03-2024   | [Go](/EXP06/)  | [CSL332 - EXP06.pdf](https://github.com/blackpeps/networklab2024/files/14748481/CSL332.-.EXP06.pdf) |
 | 07. | Leaky Bucket                       | 26-03-2024   | [Go](/EXP07/)  | [CSL332 - EXP07.pdf](https://github.com/blackpeps/networklab2024/files/14748483/CSL332.-.EXP07.pdf) |
+| 08. | Concurrent Time                    | 02-04-2024   | [Go](/EXP08/)  | [CSL332 - EXP08.pdf](https://github.com/blackpeps/networklab2024/files/14812230/CSL332.-.EXP08.pdf) |
+
 
 ## Syllabus
 
