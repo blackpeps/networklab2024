@@ -1,4 +1,4 @@
-# Concurrent Time Server
+# 08 - Concurrent Time Server
 
 ## Aim
 
@@ -48,37 +48,10 @@ Using UDP socket, create a connection between multiple clients and a single time
 
 ## OUTPUT
 
-````
+### Server
 
-ifconfig
-eth0 Link encap:Ethernet HWaddr 54:be:f7:57:e8:c5
-inet addr:192.168.90.111 Bcast:192.168.90.255 Mask:255.255.255.0
-inet6 addr: fe80::56be:f7ff:fe57:e8c5/64 Scope:Link
-UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1
-RX packets:36656 errors:0 dropped:31 overruns:0 frame:0
-TX packets:10582 errors:0 dropped:0 overruns:0 carrier:0
-collisions:0 txqueuelen:1000
-RX bytes:20471919 (20.4 MB) TX bytes:1253533 (1.2 MB)
-lo Link encap:Local Loopback
-inet addr:127.0.0.1 Mask:255.0.0.0
-inet6 addr: ::1/128 Scope:Host
-UP LOOPBACK RUNNING MTU:65536 Metric:1
-RX packets:765 errors:0 dropped:0 overruns:0 frame:0
-TX packets:765 errors:0 dropped:0 overruns:0 carrier:0
-collisions:0 txqueuelen:1
-RX bytes:71838 (71.8 KB) TX bytes:71838 (71.8 KB)
-iit-b@inlabpc-11:~/Desktop/concurrent$ gcc conserver.c -o s
-iit-b@inlabpc-11:~/Desktop/concurrent$ ./s 4011
-CLIENT 1
-gcc conclient.c -o c1
-./c1 192.168.90.111 4011
-the current time is:Mon Mar 19 11:09:27 2018
-CLIENT 1 requests time – Server responds with current time
-CLIENT 2
-gcc conclient.c -o c2
-./c2 192.168.90.111 4011
-the current time is:Mon Mar 19 11:13:57 2018
-CLIENT 2 requests time – Same Server responds with current time
+![08 - Concurrent Time - Server](https://github.com/blackpeps/networklab2024/assets/126700907/4d8e119a-44e2-4e36-ad02-6b2b08d4a042)
 
-```
-````
+### Client
+
+![08 - Concurrent Time - Client](https://github.com/blackpeps/networklab2024/assets/126700907/0e7962f6-8b91-44d0-93ef-bf86eaaab0bb)
