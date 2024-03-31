@@ -77,22 +77,32 @@ This program implements a simple multi-user chat system using TCP sockets. It co
 
 ## Algorithm
 
-### Server
+### SERVER
 
-1. Create listening socket
-2. Bind IP address and port number to the socket
-3. Listen for incoming requests on the listening socket
-4. Accept the incoming request
-5. Read messages from clients and relay them to other clients
-6. Close the connection socket
+1. Create a TCP socket.
+2. Clear memory space for socket address.
+3. Set up socket address structure with server details.
+4. Bind socket to server address.
+5. Start listening for incoming connections.
+6. Accept client connections.
+7. Convert client's network address to a readable format.
+8. Spawn a child process to handle client while the parent process stops listening.
+9. Receive data from client.
+10. Send received data back to client.
+11. Print client's IP address.
+12. Close the socket.
 
-### Client
+### CLIENT
 
-1. Create socket
-2. Connect the socket to the server
-3. Send messages to the server
-4. Receive messages from the server
-5. Close the socket
+1. Create a TCP socket.
+2. Clear memory space for socket address.
+3. Set up socket address structure with server details.
+4. Connect to server.
+5. Continuously read input from user.
+6. Send user input to server.
+7. Receive response from server.
+8. Print server's response.
+9. Repeat steps 5-8 as needed.
 
 ## Output
 
