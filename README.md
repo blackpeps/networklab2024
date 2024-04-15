@@ -14,7 +14,7 @@
 | 06. | Stop and Wait                      | 26-03-2024   | [Go](/EXP06/)  | [CSL332 - EXP06.pdf](https://github.com/blackpeps/networklab2024/files/14748481/CSL332.-.EXP06.pdf) |
 | 07. | Leaky Bucket                       | 26-03-2024   | [Go](/EXP07/)  | [CSL332 - EXP07.pdf](https://github.com/blackpeps/networklab2024/files/14748483/CSL332.-.EXP07.pdf) |
 | 08. | Concurrent Time                    | 02-04-2024   | [Go](/EXP08/)  | [CSL332 - EXP08.pdf](https://github.com/blackpeps/networklab2024/files/14812230/CSL332.-.EXP08.pdf) |
-
+| 09. | FTP                                | 17-04-2024   | [Go](/EXP09/)  | [CSL332 - EXP09.pdf](https://github.com/blackpeps/networklab2024/files/14983576/CSL332.-.EXP09.pdf) |
 
 ## Syllabus
 
