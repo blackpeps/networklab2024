@@ -28,3 +28,11 @@ Program to implement a simple FTP server for file transfer to the server.
 9. Close the socket connection and file pointer.
 
 ## OUTPUT
+
+### Server.c
+
+![Screenshot from 2024-04-16 01-04-22](https://github.com/blackpeps/networklab2024/assets/126700907/a4b755ff-34cb-480a-a77d-316fe68f0b91)
+
+### Client.c
+
+![Screenshot from 2024-04-16 01-04-29](https://github.com/blackpeps/networklab2024/assets/126700907/b7be56dd-e5b6-4e12-b184-108006495743)
